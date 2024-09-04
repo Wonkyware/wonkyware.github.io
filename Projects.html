@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<script>
+
+function timelyClick(bg){
+    const newPic = bg;
+    bg = bg.substring(5, bg.length-2);
+    const img = document.getElementById('timelyRepairsMain');
+    img.src=bg;
+}
+
+
+</script>
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruber's Portfolio</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<header>
+    <nav>
+        <a href="index.html"><span class="navLinks">About Me</span></a>
+        <a href="Projects.html"><span class="navLinks">My Projects</span></a>
+        <a href="index.html"><span class="navLinks" href="index.html">3D Work</span></a>
+        <a href="index.html"><span class="navLinks" href="index.html">Music</span></a>
+        <a href="index.html"><span class="navLinks" href="index.html">Contact Me</span></a>
+    </nav>
+    <span id="social_links">
+        this is where the social media links go
+    </span>
+</header>
+
+<body>
+    <h1 id="projTitle">My Projects</h1>
+    <div id="projMenu">
+        <ul>
+            Jump to:<br><br>
+            <a class="menuLinks" href="#gameJams"><li>Game Jams</li></a><br>
+            <a class="menuLinks" class="menuLinks" href="#unityProjs"><li>Unity Projects</li></a><br>
+            <a class="menuLinks" href="#unrealProjs"><li>Unreal Projects</li></a><br>
+            <a class="menuLinks" href="#twineProjs"><li>Twine Projects</li></a><br>
+            <a class="menuLinks" href="#other"><li>Other</li></a>
+        </ul>
+    </div>
+    <div id="allProjContainer">
+        <div  id="gameJams" class="flexContainer">
+            <h2 class="groupTitle">Game Jams</h2>
+            <h3 class="indTitle">Timely Repairs</h3>
+            <div class="projContainer">
+                <div class="gallery">
+                    <img id="timelyRepairsMain" class="galleryBig" src="Media/Projects/Timely_Repairs/almostFinished.png">
+                    <br>
+                    <button onClick="timelyClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" style='background-image: url(Media/Projects/Timely_Repairs/initialClock.png); background-size: cover;''></button>
+                    <button onClick="timelyClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" style="background-image: url(Media/Projects/Timely_Repairs/almostFinished.png); background-size: cover;"></button>
+                    <button onClick="timelyClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" style="background-image: url(Media/Projects/Timely_Repairs/openingPage.png); background-size: cover;"></button>
+                    <button onClick="timelyClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" style="background-image: url(Media/Projects/Timely_Repairs/certificate.png); background-size: cover;"></button>
+                </div>
+                <p>Timely Repairs placed <b>first</b> in a game jam run by the Science and Engineering student group, "MACS", at Macquarie University. 
+                It was made in 48 hours by a team of 4, with myself taking on primary roles in design and audio, and having a very short 
+                stint in programming when developing the initial prototype.<br><br>The game is publish on itch.io, and can be found <a style="color:aliceblue;" href="https://commadolphin.itch.io/timely-repairs">here.</a></p>
+            </div>
+        </div>
+
+        <div id="unityProjs" class="flexContainer">
+            <h2 class="groupTitle">Unity Projects</h2>
+
+            <h3 class="indTitle">Vr Mech Prototype: GunDAAAMN!</h3>
+            <div class="projContainer">
+                
+            </div>
+
+            <h3 class="indTitle">It's A Living: Vertical Slice</h3>
+            <div class="projContainer">
+                
+            </div>
+
+            <h3 class="indTitle">Aegis: Vertical Slice</h3>
+            <div class="projContainer">
+                
+            </div>
+        </div>
+
+        <div id="unrealProjs" class="flexContainer">
+            <h2 class="groupTitle">Unreal Projects</h2>
+
+            <h3 class="indTitle">TBD</h3>
+            <div class="projContainer">
+                
+            </div>
+        </div>
+
+        <div id="twineProjs" class="flexContainer">
+            <h2 class="groupTitle">Twine Projects</h2>
+
+            <h3 class="indTitle">A Little Robot</h3>
+            <div class="projContainer">
+                
+            </div>
+        </div>
+
+        <div id="other" class="flexContainer">
+            <h2 class="groupTitle">Other</h2>
+
+            <h3 class="indTitle">Developer Video Diary</h3>
+            <div class="projContainer">
+                
+            </div>
+
+            <h3 class="indTitle">'Interactive Storytelling' Uni Project</h3>
+            <div class="projContainer">
+            
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
