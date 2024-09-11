@@ -18,6 +18,13 @@
         img.src = bg;
     }
 
+    function aegisClick(bg) {
+            const newPic = bg;
+            bg = bg.substring(5, bg.length - 2);
+            const img = document.getElementById('aegisMain');
+            img.src = bg;
+        }
+
 
 </script>
 <head>
@@ -57,12 +64,16 @@
             <h3 class="indTitle">Timely Repairs</h3>
             <div class="projContainer">
                 <div class="gallery">
-                    <img id="timelyRepairsMain" class="galleryBig" src="Media/Projects/Timely_Repairs/initialClock.png">
+                    <img id="timelyRepairsMain" class="galleryBig" src="Media/Projects/Timely_Repairs/openingPage.png">
                     <br>
-                    <button onClick="timelyClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" style='background-image: url(Media/Projects/Timely_Repairs/initialClock.png); background-size: cover;''></button>
-                    <button onClick="timelyClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" style="background-image: url(Media/Projects/Timely_Repairs/almostFinished.png); background-size: cover;"></button>
-                    <button onClick="timelyClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" style="background-image: url(Media/Projects/Timely_Repairs/openingPage.png); background-size: cover;"></button>
-                    <button onClick="timelyClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" style="background-image: url(Media/Projects/Timely_Repairs/certificate.png); background-size: cover;"></button>
+                    <button onClick="timelyClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" 
+                        style='background-image: url(Media/Projects/Timely_Repairs/openingPage.png); background-size: cover;''></button>
+                    <button onClick="timelyClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" 
+                        style="background-image: url(Media/Projects/Timely_Repairs/almostFinished.png); background-size: cover;"></button>
+                    <button onClick="timelyClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" 
+                        style="background-image: url(Media/Projects/Timely_Repairs/initialClock.png); background-size: cover;"></button>
+                    <button onClick="timelyClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" 
+                        style="background-image: url(Media/Projects/Timely_Repairs/certificate.png); background-size: cover;"></button>
                 </div>
                 <p>Timely Repairs placed <b>first</b> in a game jam run by the Science and Engineering student group, "MACS", at Macquarie University. 
                 It was made in 48 hours by a team of 4, with myself taking on primary roles in design and audio, and having a very short 
@@ -78,10 +89,14 @@
                 <div class="gallery">
                     <img id="itsALivingMain" class="galleryBig" src="Media/Projects/Its_a_Living/openShot.png">
                     <br>
-                    <button onClick="livingClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" style="background-image: url(Media/Projects/Its_a_Living/openShot.png); background-size: cover;"></button>
-                    <button onClick="livingClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" style="background-image: url(Media/Projects/Its_a_Living/openShot.png); background-size: cover;"></button>
-                    <button onClick="livingClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" style="background-image: url(Media/Projects/Its_a_Living/openShot.png); background-size: cover;"></button>
-                    <button onClick="livingClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" style="background-image: url(Media/Projects/Its_a_Living/openShot.png); background-size: cover;"></button>
+                    <button onClick="livingClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" 
+                        style="background-image: url(Media/Projects/Its_a_Living/openShot.png); background-size: cover;"></button>
+                    <button onClick="livingClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" 
+                        style="background-image: url(Media/Projects/Its_a_Living/openShot.png); background-size: cover;"></button>
+                    <button onClick="livingClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" 
+                        style="background-image: url(Media/Projects/Its_a_Living/openShot.png); background-size: cover;"></button>
+                    <button onClick="livingClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" 
+                        style="background-image: url(Media/Projects/Its_a_Living/openShot.png); background-size: cover;"></button>
                 </div>
                 <p>It's A Living was a project started in the first semester of 2023, and was meant to continue through to the end of the year; I took the position of lead designer, in a group of 
                     3 other students, where I was (talk about roles and responsibilities I had on the team). Unfortunately the members of the team split up for the following semester as I was the 
@@ -91,7 +106,21 @@
 
             <h3 class="indTitle">Aegis: Vertical Slice</h3>
             <div class="projContainer">
-                
+                <div class="gallery">
+                    <img id="aegisMain" class="galleryBig" src="Media/Projects/Aegis/header.png">
+                    <br>
+                    <button onClick="aegisClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton"
+                        style="background-image: url(Media/Projects/Aegis/header.png); background-size: cover;"></button>
+                    <button onClick="aegisClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton"
+                        style="background-image: url(Media/Projects/Aegis/statue.png); background-size: cover;"></button>
+                    <button onClick="aegisClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton"
+                        style="background-image: url(Media/Projects/Aegis/box.png); background-size: cover;"></button>
+                    <button onClick="aegisClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton"
+                        style="background-image: url(Media/Projects/Aegis/outside.png); background-size: cover;"></button>
+                </div>
+                <p>Aight talking about Aegis, fill this in later.<br><br>The game is publish on Steam for free, and can be found
+                    <a style="color:aliceblue;" href="https://store.steampowered.com/app/2585250/Aegis/">here.</a>
+                </p>
             </div>
 
             <h3 class="indTitle">Vr Mech Prototype: GunDAAAMN!</h3>
