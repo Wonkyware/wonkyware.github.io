@@ -2,12 +2,21 @@
 <html>
 <script>
 
-function timelyClick(bg){
-    const newPic = bg;
-    bg = bg.substring(5, bg.length-2);
-    const img = document.getElementById('timelyRepairsMain');
-    img.src=bg;
-}
+
+    //I know I should figure out a way to have all of these functions just be one function I'm getting there don't come at me about it
+    function timelyClick(bg){
+        const newPic = bg;
+        bg = bg.substring(5, bg.length-2);
+        const img = document.getElementById('timelyRepairsMain');
+        img.src=bg;
+    }
+
+    function livingClick(bg) {
+        const newPic = bg;
+        bg = bg.substring(5, bg.length - 2);
+        const img = document.getElementById('itsALivingMain');
+        img.src = bg;
+    }
 
 
 </script>
@@ -48,7 +57,7 @@ function timelyClick(bg){
             <h3 class="indTitle">Timely Repairs</h3>
             <div class="projContainer">
                 <div class="gallery">
-                    <img id="timelyRepairsMain" class="galleryBig" src="Media/Projects/Timely_Repairs/almostFinished.png">
+                    <img id="timelyRepairsMain" class="galleryBig" src="Media/Projects/Timely_Repairs/initialClock.png">
                     <br>
                     <button onClick="timelyClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" style='background-image: url(Media/Projects/Timely_Repairs/initialClock.png); background-size: cover;''></button>
                     <button onClick="timelyClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" style="background-image: url(Media/Projects/Timely_Repairs/almostFinished.png); background-size: cover;"></button>
@@ -64,19 +73,30 @@ function timelyClick(bg){
         <div id="unityProjs" class="flexContainer">
             <h2 class="groupTitle">Unity Projects</h2>
 
-            <h3 class="indTitle">Vr Mech Prototype: GunDAAAMN!</h3>
-            <div class="projContainer">
-                
-            </div>
-
             <h3 class="indTitle">It's A Living: Vertical Slice</h3>
             <div class="projContainer">
-                
+                <div class="gallery">
+                    <img id="itsALivingMain" class="galleryBig" src="Media/Projects/Its_a_Living/openShot.png">
+                    <br>
+                    <button onClick="livingClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" style="background-image: url(Media/Projects/Its_a_Living/openShot.png); background-size: cover;"></button>
+                    <button onClick="livingClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" style="background-image: url(Media/Projects/Its_a_Living/openShot.png); background-size: cover;"></button>
+                    <button onClick="livingClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" style="background-image: url(Media/Projects/Its_a_Living/openShot.png); background-size: cover;"></button>
+                    <button onClick="livingClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" style="background-image: url(Media/Projects/Its_a_Living/openShot.png); background-size: cover;"></button>
+                </div>
+                <p>It's A Living was a project started in the first semester of 2023, and was meant to continue through to the end of the year; I took the position of lead designer, in a group of 
+                    3 other students, where I was (talk about roles and responsibilities I had on the team). Unfortunately the members of the team split up for the following semester as I was the 
+                    only student to continue into the second semester, however we're very proud of the work we did and recieved strong marks.<br><br>The game is publish on itch.io, and can be found 
+                    <a style="color:aliceblue;" href="https://commadolphin.itch.io/timely-repairs">here.</a></p>
             </div>
 
             <h3 class="indTitle">Aegis: Vertical Slice</h3>
             <div class="projContainer">
                 
+            </div>
+
+            <h3 class="indTitle">Vr Mech Prototype: GunDAAAMN!</h3>
+            <div class="projContainer">
+            
             </div>
         </div>
 
