@@ -1,8 +1,6 @@
 <!doctype html>
 <html>
 <script>
-
-
     //I know I should figure out a way to have all of these functions just be one function I'm getting there don't come at me about it
     function timelyClick(bg){
         const newPic = bg;
@@ -10,6 +8,13 @@
         const img = document.getElementById('timelyRepairsMain');
         img.src=bg;
     }
+
+    function decayClick(bg) {
+            const newPic = bg;
+            bg = bg.substring(5, bg.length - 2);
+            const img = document.getElementById('slowDecayMain');
+            img.src = bg;
+        }
 
     function livingClick(bg) {
         const newPic = bg;
@@ -24,9 +29,8 @@
             const img = document.getElementById('aegisMain');
             img.src = bg;
         }
-
-
 </script>
+
 <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gruber's Portfolio</title>
@@ -52,12 +56,14 @@
         <ul>
             Jump to:<br><br>
             <a class="menuLinks" href="#gameJams"><li>Game Jams</li></a><br>
-            <a class="menuLinks" class="menuLinks" href="#unityProjs"><li>Unity Projects</li></a><br>
+            <a class="menuLinks" href="#unityProjs"><li>Unity Projects</li></a><br>
             <a class="menuLinks" href="#unrealProjs"><li>Unreal Projects</li></a><br>
             <a class="menuLinks" href="#twineProjs"><li>Twine Projects</li></a><br>
+            <a class="menuLinks" href="#mobileProjs"><li>Mobile Projects</li></a><br>
             <a class="menuLinks" href="#other"><li>Other</li></a>
         </ul>
     </div>
+
     <div id="allProjContainer">
         <div  id="gameJams" class="flexContainer">
             <h2 class="groupTitle">Game Jams</h2>
@@ -79,6 +85,28 @@
                 It was made in 48 hours by a team of 4, with myself taking on primary roles in design and audio, and having a very short 
                 stint in programming when developing the initial prototype.<br><br>The game is publish on itch.io, and can be found <a style="color:aliceblue;" href="https://commadolphin.itch.io/timely-repairs">here.</a></p>
             </div>
+
+            <h3 class="indTitle">Slow Decay</h3>
+            <div class="projContainer">
+                <div class="gallery">
+                    <img id="slowDecayMain" class="galleryBig" src="Media/Projects/Slow_Decay/openingPage.png">
+                    <br>
+                    <button onClick="decayClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton"
+                        style='background-image: url(Media/Projects/Timely_Repairs/openingPage.png); background-size: cover;''></button>
+                    <button onClick="decayClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" 
+                        style="background-image: url(Media/Projects/Timely_Repairs/almostFinished.png); background-size: cover;"></button>
+                    <button onClick="decayClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" 
+                        style="background-image: url(Media/Projects/Timely_Repairs/initialClock.png); background-size: cover;"></button>
+                    <button onClick="decayClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" 
+                        style="background-image: url(Media/Projects/Timely_Repairs/certificate.png); background-size: cover;"></button>
+                </div>
+                <p>It's cheating a bit to put slow decay under Game Jams; I built the mechanical prototype quickly, then realised I overextended
+                    myself graphically, and didn't end up finishing and submitting the project in time. However, I really liked the concept (a zombie that has to
+                    stick parts of other monsters onto itself to suvive a mob of humans) and committed myself to finishing it, still within the constraints of 
+                    the original game jam. The current photos are of the mechanical prototype; I'm still finishing up the PS1-style graphics. 
+                    I will most likely publish this project to Itch.</p>
+            </div>
+
         </div>
 
         <div id="unityProjs" class="flexContainer">
@@ -144,6 +172,15 @@
             <h3 class="indTitle">A Little Robot</h3>
             <div class="projContainer">
                 
+            </div>
+        </div>
+
+        <div id="mobileProjs" class="flexContainer">
+            <h2 class="groupTitle">Mobile Projects</h2>
+        
+            <h3 class="indTitle">Clamshell Virtual Pet</h3>
+            <div class="projContainer">
+        
             </div>
         </div>
 
