@@ -176,6 +176,23 @@ height: 100vh;
 scroll-snap-align: start;
 }
 
+.hoverBox{
+    position: relative;
+    width: 5%;
+    height: 5%;
+    border-style: solid;
+    border-radius: 100%;
+    border-width: 12px;
+    border-color: #75ff75;
+    background-color: #9ba87e6a;
+    opacity: 50%;
+}
+
+.hoverBox:hover{
+    opacity: 100%;
+    transition: 0.5s;
+}
+
 
 
 /* 'Projects' only */
@@ -214,7 +231,7 @@ scroll-snap-align: start;
 .indTitle{
     position: sticky;
     top: 215px;
-    width: auto;
+    width: 100%;
     color: #262C26; /*262C26*/
     background-color: #DDE7DD;
 
