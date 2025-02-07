@@ -1,37 +1,14 @@
 <!doctype html>
 <html>
 <script>
-    //I know I should figure out a way to have all of these functions just be one function I'm getting there don't come at me about it
-    function timelyClick(bg){
-        const newPic = bg;
-        bg = bg.substring(5, bg.length-2);
-        const img = document.getElementById('timelyRepairsMain');
-        img.src=bg;
-    }
-
-    function decayClick(bg) {
-            const newPic = bg;
-            bg = bg.substring(5, bg.length - 2);
-            const img = document.getElementById('slowDecayMain');
-            img.src = bg;
-        }
-
-    function livingClick(bg) {
-        const newPic = bg;
+    //for swapping pictures in the gallery
+    function galleryClick(bg, elID) {
         bg = bg.substring(5, bg.length - 2);
-        const img = document.getElementById('itsALivingMain');
+        const img = document.getElementById(elID);
         img.src = bg;
     }
 
-    function aegisClick(bg) {
-            const newPic = bg;
-            bg = bg.substring(5, bg.length - 2);
-            const img = document.getElementById('aegisMain');
-            img.src = bg;
-        }
-
     function wasteheartClick(bg) {
-            const newPic = bg;
             bg = bg.substring(5, bg.length - 2);
             const img = document.getElementById('wasteheartMain');
             img.src = bg;
@@ -79,13 +56,13 @@
                 <div class="gallery">
                     <img id="timelyRepairsMain" class="galleryBig" src="Media/Projects/Timely_Repairs/openingPage.png">
                     <br>
-                    <button onClick="timelyClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" 
+                    <button onClick="galleryClick(this.style.backgroundImage, 'timelyRepairsMain')" class="galleryButton timelyRepairsButton" 
                         style='background-image: url(Media/Projects/Timely_Repairs/openingPage.png); background-size: cover;''></button>
-                    <button onClick="timelyClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" 
+                    <button onClick="galleryClick(this.style.backgroundImage, 'timelyRepairsMain')" class="galleryButton timelyRepairsButton" 
                         style="background-image: url(Media/Projects/Timely_Repairs/almostFinished.png); background-size: cover;"></button>
-                    <button onClick="timelyClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" 
+                    <button onClick="galleryClick(this.style.backgroundImage, 'timelyRepairsMain')" class="galleryButton timelyRepairsButton" 
                         style="background-image: url(Media/Projects/Timely_Repairs/initialClock.png); background-size: cover;"></button>
-                    <button onClick="timelyClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" 
+                    <button onClick="galleryClick(this.style.backgroundImage, 'timelyRepairsMain')" class="galleryButton timelyRepairsButton" 
                         style="background-image: url(Media/Projects/Timely_Repairs/certificate.png); background-size: cover;"></button>
                 </div>
                 <p>Timely Repairs placed <b>first</b> in a game jam run by the Science and Engineering student group, "MACS", at Macquarie University. 
@@ -98,13 +75,13 @@
                 <div class="gallery">
                     <img id="slowDecayMain" class="galleryBig" src="Media/Projects/Slow_Decay/sixSecondsLeft.png">
                     <br>
-                    <button onClick="decayClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton"
+                    <button onClick="galleryClick(this.style.backgroundImage, 'slowDecayMain')" class="galleryButton timelyRepairsButton"
                         style='background-image: url(Media/Projects/Slow_Decay/sixSecondsLeft.png); background-size: cover;''></button>
-                    <button onClick="decayClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" 
+                    <button onClick="galleryClick(this.style.backgroundImage, 'slowDecayMain')" class="galleryButton timelyRepairsButton" 
                         style="background-image: url(Media/Projects/Slow_Decay/uiShowcase2.png); background-size: cover;"></button>
-                    <button onClick="decayClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" 
+                    <button onClick="galleryClick(this.style.backgroundImage, 'slowDecayMain')" class="galleryButton timelyRepairsButton" 
                         style="background-image: url(Media/Projects/Slow_Decay/unityEnvironment.png); background-size: cover;"></button>
-                    <button onClick="decayClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" 
+                    <button onClick="galleryClick(this.style.backgroundImage, 'slowDecayMain')" class="galleryButton timelyRepairsButton" 
                         style="background-image: url(Media/Projects/Slow_Decay/uiShowcase.png); background-size: cover;"></button>
                 </div>
                 <p>It's cheating a bit to put slow decay under Game Jams; I built the mechanical prototype quickly, then realised I overextended
@@ -124,13 +101,13 @@
                 <div class="gallery">
                     <img id="itsALivingMain" class="galleryBig" src="Media/Projects/Its_a_Living/openShot.png">
                     <br>
-                    <button onClick="livingClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" 
+                    <button onClick="galleryClick(this.style.backgroundImage, 'itsALivingMain')" class="galleryButton timelyRepairsButton" 
                         style="background-image: url(Media/Projects/Its_a_Living/openShot.png); background-size: cover;"></button>
-                    <button onClick="livingClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" 
+                    <button onClick="galleryClick(this.style.backgroundImage, 'itsALivingMain')" class="galleryButton timelyRepairsButton" 
                         style="background-image: url(Media/Projects/Its_a_Living/enviro.png); background-size: cover;"></button>
-                    <button onClick="livingClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" 
+                    <button onClick="galleryClick(this.style.backgroundImage, 'itsALivingMain')" class="galleryButton timelyRepairsButton" 
                         style="background-image: url(Media/Projects/Its_a_Living/dog.png); background-size: cover;"></button>
-                    <button onClick="livingClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton" 
+                    <button onClick="galleryClick(this.style.backgroundImage, 'itsALivingMain')" class="galleryButton timelyRepairsButton" 
                         style="background-image: url(Media/Projects/Its_a_Living/view.png); background-size: cover;"></button>
                 </div>
                 <p>It's A Living was a project started in the first semester of 2023, and was meant to continue through to the end of the year; I took the position of lead designer, in a group of 
@@ -144,13 +121,13 @@
                 <div class="gallery">
                     <img id="aegisMain" class="galleryBig" src="Media/Projects/Aegis/header.png">
                     <br>
-                    <button onClick="aegisClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton"
+                    <button onClick="galleryClick(this.style.backgroundImage, 'aegisMain')" class="galleryButton timelyRepairsButton"
                         style="background-image: url(Media/Projects/Aegis/header.png); background-size: cover;"></button>
-                    <button onClick="aegisClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton"
+                    <button onClick="galleryClick(this.style.backgroundImage, 'aegisMain')" class="galleryButton timelyRepairsButton"
                         style="background-image: url(Media/Projects/Aegis/statue.png); background-size: cover;"></button>
-                    <button onClick="aegisClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton"
+                    <button onClick="galleryClick(this.style.backgroundImage, 'aegisMain')" class="galleryButton timelyRepairsButton"
                         style="background-image: url(Media/Projects/Aegis/box.png); background-size: cover;"></button>
-                    <button onClick="aegisClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton"
+                    <button onClick="galleryClick(this.style.backgroundImage, 'aegisMain')" class="galleryButton timelyRepairsButton"
                         style="background-image: url(Media/Projects/Aegis/outside.png); background-size: cover;"></button>
                 </div>
                 <p>I joined the team making <i>Aegis</i> in the second half of their development cycle. My role was mostly to redesign the existing levels
@@ -212,13 +189,13 @@
                 <div class="gallery">
                     <img id="wasteheartMain" class="galleryBig" src="Media/Projects/Wasteheart/mobile_showcase.png">
                     <br>
-                    <button onClick="wasteheartClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton"
+                    <button onClick="galleryClick(this.style.backgroundImage, 'wasteheartMain')" class="galleryButton timelyRepairsButton"
                         style="background-image: url(Media/Projects/Wasteheart/mobile_showcase.png); background-size: cover;"></button>
-                    <button onClick="wasteheartClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton"
+                    <button onClick="galleryClick(this.style.backgroundImage, 'wasteheartMain')" class="galleryButton timelyRepairsButton"
                         style="background-image: url(Media/Projects/Wasteheart/cafe.png); background-size: cover;"></button>
-                    <button onClick="wasteheartClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton"
+                    <button onClick="galleryClick(this.style.backgroundImage, 'wasteheartMain')" class="galleryButton timelyRepairsButton"
                         style="background-image: url(Media/Projects/Wasteheart/rewiring.png); background-size: cover;"></button>
-                    <button onClick="wasteheartClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton"
+                    <button onClick="galleryClick(this.style.backgroundImage, 'wasteheartMain')" class="galleryButton timelyRepairsButton"
                         style="background-image: url(Media/Projects/Wasteheart/decisions.png); background-size: cover;"></button>
                 </div>
                 <p>I joined the team making <i>Aegis</i> in the second half of their development cycle. My role was mostly to redesign
