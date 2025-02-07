@@ -29,6 +29,13 @@
             const img = document.getElementById('aegisMain');
             img.src = bg;
         }
+
+    function wasteheartClick(bg) {
+            const newPic = bg;
+            bg = bg.substring(5, bg.length - 2);
+            const img = document.getElementById('wasteheartMain');
+            img.src = bg;
+        }
 </script>
 
 <head>
@@ -200,9 +207,30 @@
                 
             </div>
 
-            <h3 class="indTitle">'Interactive Storytelling' Uni Project</h3>
+            <h3 class="indTitle">WasteHeart - 'Interactive Storytelling' Uni Project</h3>
             <div class="projContainer">
-            
+                <div class="gallery">
+                    <img id="wasteheartMain" class="galleryBig" src="Media/Projects/Wasteheart/mobile_showcase.png">
+                    <br>
+                    <button onClick="wasteheartClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton"
+                        style="background-image: url(Media/Projects/Wasteheart/mobile_showcase.png); background-size: cover;"></button>
+                    <button onClick="wasteheartClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton"
+                        style="background-image: url(Media/Projects/Wasteheart/cafe.png); background-size: cover;"></button>
+                    <button onClick="wasteheartClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton"
+                        style="background-image: url(Media/Projects/Wasteheart/rewiring.png); background-size: cover;"></button>
+                    <button onClick="wasteheartClick(this.style.backgroundImage)" class="galleryButton timelyRepairsButton"
+                        style="background-image: url(Media/Projects/Wasteheart/decisions.png); background-size: cover;"></button>
+                </div>
+                <p>I joined the team making <i>Aegis</i> in the second half of their development cycle. My role was mostly to redesign
+                    the existing levels
+                    they had made, as well as do some minor work designing new areas, and do a bit on the marketing and documentation
+                    side of things.
+                    My biggest contributions were probably the first puzzle room the player interacts with, and the trailer on Steam,
+                    which I had to
+                    quickly put together so we would have one when we presented Aegis at the <b>SXSW Student Showcase</b>.<br><br>The
+                    game is publish on Steam for free, and can be found
+                    <a style="color:aliceblue;" href="https://store.steampowered.com/app/2585250/Aegis/">here.</a>
+                </p>
             </div>
         </div>
     </div>
