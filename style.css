@@ -66,6 +66,7 @@ p{
     font-size: 1.1vw;
     color: #262C26;
     padding: 0px 20px 0px 30px;
+    text-align: justify;
 }
 
 a{
@@ -139,6 +140,22 @@ button{
     color: #DDE7DD;
 }
 
+.infoBox{
+    position: absolute;
+    color: #262C26;
+    background-color: #80a874;
+    text-align: justify;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+    border-radius: 30px;
+    border-style: solid;
+    border-width: 4px;
+
+    opacity: 0%;
+    z-index: -100;
+}
+
 
 
 /* IDs */
@@ -191,6 +208,74 @@ scroll-snap-align: start;
 .hoverBox:hover{
     opacity: 100%;
     transition: 0.5s;
+}
+
+
+/* for the hover boxes */
+#windowHover:hover ~ #windowBox{
+    opacity: 100%;
+    transition: 0.5s;
+    z-index: inherit;
+}
+
+#shelfOneHover:hover~#shelfOneBox {
+    opacity: 100%;
+    transition: 0.5s;
+    z-index: inherit;
+}
+
+#shelfTwoHover:hover~#shelfTwoBox {
+    opacity: 100%;
+    transition: 0.5s;
+    z-index: inherit;
+}
+
+#shelfThreeHover:hover~#shelfThreeBox {
+    opacity: 100%;
+    transition: 0.5s;
+    z-index: inherit;
+}
+
+#degreeHover:hover~#degreeBox {
+    opacity: 100%;
+    transition: 0.5s;
+    z-index: inherit;
+}
+
+#badgesHover:hover~#badgesBox {
+    opacity: 100%;
+    transition: 0.5s;
+    z-index: inherit;
+}
+
+#threeDHover:hover~#threeDBox {
+    opacity: 100%;
+    transition: 0.5s;
+    z-index: inherit;
+}
+
+#gameDevHover:hover~#gameDevBox {
+    opacity: 100%;
+    transition: 0.5s;
+    z-index: inherit;
+}
+
+#catHover:hover~#catBox {
+    opacity: 100%;
+    transition: 0.5s;
+    z-index: inherit;
+}
+
+#keyboardHover:hover~#keyboardBox {
+    opacity: 100%;
+    transition: 0.5s;
+    z-index: inherit;
+}
+
+#littleShelfHover:hover~#littleShelfBox {
+    opacity: 100%;
+    transition: 0.5s;
+    z-index: inherit;
 }
 
 
@@ -315,3 +400,4 @@ scroll-snap-align: start;
     border-color: #DDE7DD;
     border-radius: 20px;
 }
+
